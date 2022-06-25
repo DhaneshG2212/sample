@@ -1,0 +1,13 @@
+body {
+    background-color: lightgoldenrodyellow;
+  }
+  
+  h1 {
+      text-align: center;
+    color: greenyellow;
+    margin-left:20px;
+  }
+  p{
+      text-align: center;
+      font-weight: 20px;
+  }

@@ -1,0 +1,191 @@
+<html>
+<head>
+<title>Senthur Bikes</title>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    min-height: 100vh;
+    
+}
+header{
+    position:sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    z-index: 1;
+    background-color: white;
+}
+
+header .tle{
+    color: red;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+section 
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(red, white);
+}
+section .imgBx
+{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+section .imgBx::before{
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(red, white);
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+section .imgBx img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section .contentBx
+{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    
+}
+section .contentBx .formBx
+{
+    width: 50%;
+}
+section .contentBx .formBx .inputBx
+{
+    margin-bottom: 20px;
+}
+section .contentBx .formBx h2
+{
+    color: black;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid darkred;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+section .contentBx .formBx .inputBx span{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: black;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+}
+section .contentBx .formBx .inputBx input{
+    width:100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: gray;
+    background: transparent;
+    border-radius: 30px;
+}
+section .contentBx .formBx .inputBx input[type="radio"]
+{
+    padding-left: 10px;
+}
+section .contentBx .formBx .inputBx input[type="submit"]
+{
+    background: red;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+section .contentBx .formBx .inputBx input[type="submit"]:hover{
+    background:lightcoral;
+
+}
+</style>
+</head>
+<body>
+<header>
+<p class="tle">SENTHUR BIKE ACCESSORIES<p>
+</header>
+<section>
+    <div class="imgBx">
+        <img src="https://wallpaperaccess.com/full/226908.jpg">
+    </div>
+    <div class="contentBx">
+    <div class="formBx">
+        <h2>Details</h2>
+    <form>
+    <div class="inputBx">
+        <span>Name</span>
+        <input type="text" name="">
+    </div>
+    <div class="inputBx">
+    <span>Choose your Bike</span><br>
+    </div>
+    <div>
+    <input type="radio" id="BMW" value="BMW" name="Bike">
+  <label for="BMW">BMW</label><br>
+  <input type="radio" value="DUGATI" id="DUGATI" name="Bike">
+  <label for="DUCATI">DUCATI</label><br>
+  <input type="radio" value="KTM" id="KTM" name="Bike">
+  <label for="KTM">KTM</label><br>
+</div>
+<div class="inputBx">
+    <span>Accessories</span>
+</div>
+<div>
+    <input type="checkbox" value="Bike">
+  <label>Helmets</label><br>
+  <input type="checkbox" value="Car">
+  <label>Riding Accessories</label><br>
+  <input type="checkbox" value="Boat">
+  <label>Electronics</label><br>
+</div>
+<div class="inputBx">
+    <span>Service Cost</span>
+<select name="cost" id="cost">
+  <option value="7000">Rs.7000</option>
+  <option value="10000">Rs.10000</option>
+  <option value="12000">Rs.12000</option>
+</select>
+</div>
+<div class="inputBx">           
+    <input type="submit" value="Submit"name="">
+</div>
+    </form>
+    </div>
+    </div>
+</section>
+</html>
